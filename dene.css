@@ -1,0 +1,50 @@
+.carousel{
+    width: 600px;
+    height: 400px;
+    overflow:hidden;
+    position: relative;
+    
+  
+}
+.carousel-item{
+    
+    transition: .2s all;
+    position: absolute;
+    right:  600px;
+   
+}
+.carousel-active{
+    right: 0;
+}
+.carousel-item img{
+    width: 600px;
+    height: 400px;
+}
+
+.carousel-actions{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+.carousel-button{
+    border-radius: 50px;
+    font-weight: bold;
+}
+.numbers{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    display: flex;
+}
+.number{
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: #eee;
+    padding: 6px;
+    margin-right: 10px;
+}
